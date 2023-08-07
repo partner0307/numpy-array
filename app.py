@@ -125,3 +125,31 @@ print(np.sort(x_arr1))      # [[2, 3, 4], [0, 1, 5]]
 filter_arr = array_one > 7
 new_arr3 = array_one(filter_arr)        # [8 9 10 11 12]
 
+
+
+
+
+
+
+
+
+############################################################################################################
+####################################            Matrix             #########################################
+############################################################################################################
+
+a = np.array([2, 3])
+b = np.array([4, 5])
+new_matrix = np.matrix([[2, 3], [4, 5]])    # [[2, 3] [4, 5]]
+
+np.dot(a, b, out=None)
+new_matrix1 = a.dot(b)  # [[35, 31] [87, 79]]
+
+add_matrix = np.add(a, b)
+subtract_matrix = np.subtract(a, b)
+mul_matrix = a.dot(b)
+divide_matrix = np.divide(a, b)
+
+inverse_matrix = (np.linalg.inv(a))
+transpose_matrix = (np.transpose(a))    [[2, 6], [3, 7]]
+pow_matrix = (np.linalg.matrix_power(a, 2))
+size = (np.size(a))
